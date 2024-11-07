@@ -72,6 +72,7 @@ print(letter_counts)
 # see things in a nested loop
 
 for t in letter_counts:
+
     for l in sentence:
         print(t, l)
 
@@ -100,9 +101,19 @@ for t in terms:
     counts[t] = 0
 
 for t in terms:
+
     for w in words:
         # print(t, w)
         # caution don't use this for hw4
         if t == w:
             counts[t] = counts[t] + 1
 print(counts)
+
+#
+
+d = {}
+
+d['a'] = 0
+
+print(d)
+print(d['a'])
